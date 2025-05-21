@@ -102,7 +102,7 @@ ul li{
   color: #696868;
 }
 .admis{
-  background: #1c3875;
+  background: linear-gradient(6deg, rgba(30, 39, 79, 1) 21%, rgba(54, 76, 176, 1) 77%);
   padding: 30px 80px;
   border-radius: 20px;
 }
