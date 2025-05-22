@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Best Animation College | Enquire Now</title>
-  <meta name="description"
-    content="">
+  <meta name="description" content="">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -34,7 +33,7 @@
         <!-- Info Columns -->
         <div class="col-lg-10 col-md-9 col-12">
           <div class="row">
-            <div class="col-lg-5 col-md-4 col-12">
+            <div class="col-lg-5 col-md-4 col-12 mdf">
               <div class="d-flex bvc">
                 <img src="assets/img/message.png" alt="" class="me-2" width="16px" height="16px">
                 <a href="mailto:info@swamivivekanandauniversity.ac.in">
@@ -42,7 +41,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-12">
+            <div class="col-lg-3 col-md-4 col-12 mdf">
               <div class="d-flex bvc">
                 <img src="assets/img/phone.png" alt="" class="me-2" width="18px" height="18px">
                 <a href="tel:917044086270">
@@ -51,9 +50,10 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-12">
-              <div class="d-flex bvc">
+              <div class="d-flex bvc" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="assets/img/headphones.png" alt="" class="me-2" width="18px" height="18px">
-                <p class="text-white mb-0" style="cursor: pointer;">Schedule your free counselling session</p>
+                <p class="text-white mb-0" style="cursor: pointer; animation: blink 1s infinite;">Schedule your free
+                  counselling session</p>
               </div>
             </div>
           </div>
@@ -72,12 +72,20 @@
 
   <section class="banner">
     <div class="bannr-img">
-      <img src="assets/img/banner.jpg" alt="" class="img-fluid">
+      <img src="assets/img/banner.webp" alt="" class="img-fluid d-none d-lg-block">
+      <img src="assets/img/banner mobile.webp" alt="" class="img-fluid d-lg-none">
       <div class="bnner-text">
         <h1>Learn B.SC in Animation <br>
           With Us</h1>
-        <h3>4 Years Degee Course</h3>
-        <button class="btn btn-danger">Apply Now</button>
+        <!-- <h3>4 Years Degee Course</h3> -->
+        <p style="color:#fff;">
+          It's time to make dreams come true! Excel with a B.Sc. (H) in multimedia and animation. <br> Now is the moment
+          to
+          determine the future, invent, and create!
+
+        </p>
+        <button class="btn btn-danger shine-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply
+          Now</button>
       </div>
     </div>
     </div>
@@ -85,8 +93,8 @@
 
   <section class="scfg mb">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-6 col-12">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-lg-7 col-md-6 col-12 order-md-first">
           <div class="row g-0">
             <div class="col-lg-6 col-md-6 col-12">
               <div class="boxe1">
@@ -95,18 +103,19 @@
                   Scholarship Facilities
                 </h4>
                 <p class="text-white">
-                  If you’ve been researching exactly what skill you want to learn,
+                  Avail yourself of the scholarship facilities that the university offers.
+
                 </p>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="boxe2">
-                <img src="assets/img/scf.jpg" alt="" class="img-fluid">
+                <img src="assets/img/Scholarship.webp" alt="" class="img-fluid">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="boxe2">
-                <img src="assets/img/plac.jpg" alt="" class="img-fluid">
+                <img src="assets/img/placement.webp" alt="" class="img-fluid">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12">
@@ -117,45 +126,55 @@
                   98% Placement
                 </h4>
                 <p class="text-white">
-                  If you’ve been researching exactly what skill you want to learn,
+                  Leverage the placement opportunities that we provide after the course.
+
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 col-12">
+        <div class="col-lg-5 col-md-6 col-12 order-md-last">
+
           <div class="form">
             <div class="form-box">
-              Free Counselling
+              Application Form
             </div>
-            <div class="mb-4">
-              <input type="text" class="form-control" placeholder="Name" required>
-            </div>
-            <div class="mb-4">
-              <input type="text" class="form-control" placeholder="Phone Number" required>
-            </div>
-            <div class="mb-4">
-              <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-4">
-              <select class="form-select form-select-sm" aria-label="Small select example" required>
-                <option selected value="">Course Preferred</option>
-              </select>
-            </div>
-            <div class="mb-4">
-              <select class="form-select form-select-sm" aria-label="Small select example" required>
-                <option selected value="">Select State</option>
-              </select>
-            </div>
-            <div class="mb-4">
-              <select class="form-select form-select-sm" aria-label="Small select example" required>
-                <option selected value="">Select City</option>
-              </select>
-              <div class="text-center">
-                <button class="btn btn-primary">Submit <img src="assets/img/arrow.png" alt=""></button>
+            <h5 class="text-center" style="color: #fff;">
+              Admission Open 2025-26
+
+            </h5>
+            <form action="">
+              <div class="mb-4">
+                <input type="text" class="form-control" placeholder="Name" required>
               </div>
-            </div>
+              <div class="mb-4">
+                <input type="text" class="form-control" placeholder="Phone Number" required>
+              </div>
+              <div class="mb-4">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-4">
+                <select class="form-select form-select-sm" aria-label="Small select example" required>
+                  <option selected value="">Location</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <select class="form-select form-select-sm" aria-label="Small select example" required>
+                  <option selected value="">Qualification</option>
+                  <option value="H.S">H.S</option>
+                  <option value="Pursuing Graduation">Pursuing Graduation</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <div class="text-center">
+                  <button class="btn btn-primary" style="background-color: #be2925;">Apply Now <img
+                      src="assets/img/arrow.png" alt=""></button>
+                </div>
+              </div>
+            </form>
           </div>
+
         </div>
       </div>
   </section>
@@ -165,24 +184,32 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-12">
           <div class="img-abt">
-            <img src="assets/img/image.jpg" alt="" class="img-fluid">
+            <img src="assets/img/about.webp" alt="" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-12">
           <div class="text-abt">
             <h2>B.Sc in Animation</h2>
-            <p class="mb-2"><b>Duration</b> - 4 Years</p>
+            <!-- <p class="mb-2"><b>Duration</b> - 4 Years</p> -->
             <p class="mb-2"><b>Eligibility:</b> 10+2 passed / Equivalent</p>
             <p>
-              The B.Sc. (H) Animation and Multimedia course at Swami Vivekananda University, which is among the best bsc
-              multimedia and animation colleges in Kolkata, is designed to cater to the growing demand for skilled
-              animators and multimedia professionals. The b sc in animation and multimedia program equips students with
-              the necessary artistic and technical skills required to excel in the field of animation and multimedia.
-              The curriculum of the bsc animation & multimedia course takes a multidisciplinary approach, combining
-              aspects of fine arts, storytelling, graphic design, and technology.
+              The B.Sc. (H) Animation and Multimedia course at Swami Vivekananda University, which is among the best
+              B.Sc. multimedia and animation colleges in Kolkata, is designed to cater to the growing demand for skilled
+              animators and multimedia professionals. The B.Sc. in Animation and Multimedia programme equips students
+              with the necessary artistic and technical skills required to excel in the field of animation and
+              multimedia. The curriculum of the B.Sc. Animation & Multimedia course takes a multidisciplinary approach,
+              combining aspects of fine arts, storytelling, graphic design, and technology.
+            </p>
+            <p>
+              B.Sc. in Animation & Multimedia Course Details: Take a 4-year ride where technology and creativity come
+              together! Our B.Sc. in Animation course gives you industry-ready skills in 2D/3D animation, VFX, and
+              digital storytelling. Available to enthusiastic students who have cleared 10+2 or equivalent, this course
+              brings imagination to life in the form of breathtaking visual masterpieces!
+
             </p>
 
-            <button class="btn btn-danger">To became an animator</button>
+            <button class="btn btn-danger shine-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Your
+              Couselling</button>
           </div>
         </div>
       </div>
@@ -191,8 +218,8 @@
 
   <section class="program mb">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-6 col-12">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-lg-7 col-md-6 col-12 order-md-first">
           <div class="pro-text">
             <h2>Programme Overview</h2>
             <p>
@@ -211,15 +238,16 @@
                 <li>Faculty members are acclaimed artists, animators, and industry experts who provide mentorship and
                   guidance to students, fostering their artistic skills and technical knowledge.</li>
               </ul>
-              <div class="text-center">
-                <button class="btn btn-danger">Enroll Now</button>
+              <div class="">
+                <button class="btn btn-danger shine-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Enroll
+                  Now</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-5 col-md-5 col-12">
+        <div class="col-lg-5 col-md-5 col-12 order-md-last">
           <div class="pro-img">
-            <img src="assets/img/image1.webp" alt="" class="img-fluid">
+            <img src="assets/img/program.webp" alt="" class="img-fluid">
           </div>
         </div>
       </div>
@@ -235,18 +263,19 @@
             <img src="assets/img/center.png" alt="">
             <h3>Top Rank University</h3>
             <p>
-              If you’ve been researching exactly what skill you want to learn, or if you just need one more skill to
-              round out your resume Whether
+              Ours is a top-ranked university in India, providing quality education to a lot of students who are
+              aspiring to become future animators.
+
             </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-12">
           <div class="c-box br-o">
             <img src="assets/img/academic.png" alt="">
-            <h3>100+ Academic Pattern</h3>
+            <h3>100+ Academic Patents</h3>
             <p>
-              If you’ve been researching exactly what skill you want to learn, or if you just need one more skill to
-              round out your resume Whether
+              Our university has more than 100 academic patents to its name. That is a significant achievement for which
+              an institute should be proud.
             </p>
           </div>
         </div>
@@ -255,8 +284,8 @@
             <img src="assets/img/certi.png" alt="">
             <h3>Global Certificate</h3>
             <p>
-              If you’ve been researching exactly what skill you want to learn, or if you just need one more skill to
-              round out your resume Whether
+              The certificate that a student gets after successful completion of a course is like a global certificate.
+              It prepares students for a wider market.
             </p>
           </div>
         </div>
@@ -266,11 +295,12 @@
 
   <section class="infra mb">
     <div class="ing-text">
-      <img src="assets/img/infra.webp" alt="" class="img-fluid">
+      <img src="assets/img/Expert.webp" alt="" class="img-fluid">
       <div class="terd">
 
         <h1 class="hyg">
-          Inspiring student to become an <span class="animator">Animation Expert</span> on various feilds
+          Inspiring student to become an <br>
+          Animation Expert on various fields
         </h1>
         <p class="text-white mt-4">
           There are endless career opportunities post successful completion of this course. Be it films and television,
@@ -282,6 +312,13 @@
 
   <section class="career mb">
     <div class="container">
+      <div class="lg-none text-center">
+        <h2>Career Opportunity</h2>
+        <p>
+          After completing this programme successfully, there are lots of job opportunities.
+
+        </p>
+      </div>
       <div class="owl-carousel owl-theme owl-banner" data-owl-carousel='{
         "margin": 10, 
         "nav":false,
@@ -401,34 +438,33 @@
     </div>
     <div class="marquee marquee--pause-hover js-marquee">
       <div class="marquee__group">
-        <img class="img-fluid" src="assets/img/sony.jpg" alt="sony">
-        <img class="img-fluid" src="assets/img/fujifilm.jpg" alt="fujifilm">
-        <img class="img-fluid" src="assets/img/hoichoi.jpg" alt="hoichoi">
-        <img class="img-fluid" src="assets/img/Capgimini.jpg" alt="Capgimini">
-        <img class="img-fluid" src="assets/img/cognizant.jpg" alt="cognizant">
-        <img class="img-fluid" src="assets/img/klikk.jpg" alt="klikk">
-        <img class="img-fluid" src="assets/img/greengold.jpg" alt="greengold">
-        <img class="img-fluid" src="assets/img/new18.jpg" alt="new18">
-        <img class="img-fluid" src="assets/img/canon.jpg" alt="canon">
-        <img class="img-fluid" src="assets/img/arc.jpg" alt="arc">
-        <img class="img-fluid" src="assets/img/angel.jpg" alt="angel">
-        <img class="img-fluid" src="assets/img/zee.jpg" alt="zee">
+        <img class="img-fluid" src="assets/img/Sony.webp" alt="sony">
+        <img class="img-fluid" src="assets/img/Fujifilm.webp" alt="fujifilm">
+        <img class="img-fluid" src="assets/img/Hoichoi.webp" alt="hoichoi">
+        <img class="img-fluid" src="assets/img/Capgemini.webp" alt="Capgimini">
+        <img class="img-fluid" src="assets/img/Cognizant.webp" alt="cognizant">
+        <img class="img-fluid" src="assets/img/Klikk.webp" alt="klikk">
+        <img class="img-fluid" src="assets/img/Greengold.webp" alt="greengold">
+        <img class="img-fluid" src="assets/img/News18bangla.webp" alt="new18">
+        <img class="img-fluid" src="assets/img/Canon.webp" alt="canon">
+        <img class="img-fluid" src="assets/img/ARC.webp" alt="arc">
+        <img class="img-fluid" src="assets/img/Angel.webp" alt="angel">
+        <!-- <img class="img-fluid" src="assets/img/zee.jpg" alt="zee"> -->
       </div>
     </div>
     <div class="marquee marquee--reversed marquee--pause-hover js-marquee">
       <div class="marquee__group">
-        <img class="img-fluid" src="assets/img/sony.jpg" alt="sony">
-        <img class="img-fluid" src="assets/img/fujifilm.jpg" alt="fujifilm">
-        <img class="img-fluid" src="assets/img/hoichoi.jpg" alt="hoichoi">
-        <img class="img-fluid" src="assets/img/Capgimini.jpg" alt="Capgimini">
-        <img class="img-fluid" src="assets/img/cognizant.jpg" alt="cognizant">
-        <img class="img-fluid" src="assets/img/klikk.jpg" alt="klikk">
-        <img class="img-fluid" src="assets/img/greengold.jpg" alt="greengold">
-        <img class="img-fluid" src="assets/img/new18.jpg" alt="new18">
-        <img class="img-fluid" src="assets/img/canon.jpg" alt="canon">
-        <img class="img-fluid" src="assets/img/arc.jpg" alt="arc">
-        <img class="img-fluid" src="assets/img/angel.jpg" alt="angel">
-        <img class="img-fluid" src="assets/img/zee.jpg" alt="zee">
+        <img class="img-fluid" src="assets/img/Sony.webp" alt="sony">
+        <img class="img-fluid" src="assets/img/Fujifilm.webp" alt="fujifilm">
+        <img class="img-fluid" src="assets/img/Hoichoi.webp" alt="hoichoi">
+        <img class="img-fluid" src="assets/img/Capgemini.webp" alt="Capgimini">
+        <img class="img-fluid" src="assets/img/Cognizant.webp" alt="cognizant">
+        <img class="img-fluid" src="assets/img/Klikk.webp" alt="klikk">
+        <img class="img-fluid" src="assets/img/Greengold.webp" alt="greengold">
+        <img class="img-fluid" src="assets/img/News18bangla.webp" alt="new18">
+        <img class="img-fluid" src="assets/img/Canon.webp" alt="canon">
+        <img class="img-fluid" src="assets/img/ARC.webp" alt="arc">
+        <img class="img-fluid" src="assets/img/Angel.webp" alt="angel">
       </div>
     </div>
   </section>
@@ -444,8 +480,13 @@
           </div>
           <div class="col-lg-8 col-md-9 col-12">
             <div class="adn-text">
-              <h2 style="color:#fff;">Transform Your Life Through <br> B.Sc Animation</h2>
-              <button class="btn btn-danger">Grab Your Seat !</button>
+              <h2 style="color:#fff;">Guaranteed Placement Assistance</h2>
+              <p style="color:#fff;">
+                Following the programme, you can fully benefit from the numerous job prospects that will be offered.
+
+              </p>
+              <button class="btn btn-danger shine-button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="background-color: #be2925;">Grab Your Seat !</button>
             </div>
           </div>
         </div>
@@ -455,7 +496,7 @@
 
   <section class="testimonial mb">
     <div class="container">
-      <h2 style="text-align:center;">Student's Speak</h2>
+      <h2 style="text-align:center;">Our Placed Students</h2>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-12">
           <div class="testi_box p-3 border rounded shadow-sm">
@@ -470,9 +511,9 @@
               </div>
               <div>
                 <img src="assets/img/inverted-commas.png" alt="" width="25px">
-                <p class="mb-2"><b>Name:</b> Rukhsar Sheikh</p>
-                <p class="mb-2"><b>CTC:</b> 25 per annum</p>
-                <p><b>Company Name:</b> Wipro</p>
+                <p class="mb-2"><b>Name:</b> Sayanta Banerjee</p>
+                <p class="mb-2"><b>CTC:</b> 20 Lakhs Per Annum</p>
+                <p><b>Company Name:</b> Byjus</p>
               </div>
             </div>
           </div>
@@ -486,13 +527,13 @@
             <!-- Student Info -->
             <div class="d-flex align-items-start">
               <div class="me-4 hgf">
-                <img src="assets/img/sayanta-banerjee.png" alt="" class="img-fluid" style="max-width: 80px;">
+                <img src="assets/img/Suman.png" alt="" class="img-fluid" style="max-width: 80px;">
               </div>
               <div>
                 <img src="assets/img/inverted-commas.png" alt="" width="25px">
-                <p class="mb-2"><b>Name:</b> Rukhsar Sheikh</p>
-                <p class="mb-2"><b>CTC:</b> 25 per annum</p>
-                <p><b>Company Name:</b> Wipro</p>
+                <p class="mb-2"><b>Name:</b> Sayed Nazish</p>
+                <p class="mb-2"><b>CTC:</b> 25 Lakhs Per Annum</p>
+                <p><b>Company Name:</b> Saudi Aramco</p>
               </div>
             </div>
           </div>
@@ -539,7 +580,8 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                   A. Our B.Sc. in Animation and Multimedia programme blends creativity and technology to provide students
+                    A. Our B.Sc. in Animation and Multimedia programme blends creativity and technology to provide
+                    students
                     with industry exposure, hands-on learning opportunities, and state-of-the-art tools that enable them
                     to succeed in the VFX, gaming, and animation industries.
                   </div>
@@ -555,7 +597,8 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                  A.  Graduates can work in leading animation studios, video game businesses, and IT firms worldwide as 3D
+                    A. Graduates can work in leading animation studios, video game businesses, and IT firms worldwide as
+                    3D
                     animators, VFX artists, game developers, multimedia designers, and software engineers.
 
 
@@ -572,7 +615,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                   A. Indeed! Because of our strong industry ties, students are likely to gain practical experience
+                    A. Indeed! Because of our strong industry ties, students are likely to gain practical experience
                     through internships with leading production companies, technology companies, and studios.
 
 
@@ -589,7 +632,7 @@
                 <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     Experience is not necessary! Students who are passionate about creativity and technology are
-                  A. welcome. We start from scratch and gradually improve our abilities.
+                    A. welcome. We start from scratch and gradually improve our abilities.
 
 
 
@@ -651,74 +694,98 @@
     <i class="fa-solid fa-chevron-up" onclick="topFunction()" title="Go top"></i>
   </div> -->
 
-  <!-- <section class="sticky-icon">
-        <div class="icon-box">
-          <a href="https://api.whatsapp.com/send?phone=916292000096"><img src="assets/img/whatsapp.png" alt="" width="25px"></a>
-        </div>
-        <div class="icon-box">
-            <a href="tel:+916292000095"><img src="assets/img/phone.png" alt="" width="28px"></a>
-        </div>
-</section> -->
+  <section class="sticky-icon">
+    <div class="icon-box">
+      <a href="https://api.whatsapp.com/send?phone=917980333922" target="_blank"><img src="assets/img/whatsapp.png"
+          alt="" width="25px"></a>
+    </div>
+    <div class="icon-box">
+      <a href="tel:+917044086270"><img src="assets/img/phone.png" alt="" width="28px"></a>
+    </div>
+  </section>
 
-  <!-- <section class="apply">
-  <div class="appli" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      APPLY NOW
-  </div>  
-</section> -->
+  <section class="apply">
+    <div class="shine-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Admission Open 2025-26
+    </div>
+  </section>
+
+  <!-- phon sticky -->
+  <div class="sticky-footer">
+    <a href="https://api.whatsapp.com/send?phone=917980333922" target="_blank" class="footer-btn whatsapp">
+      <img src="assets/img/whatsapp.png" alt="" width="25px">
+    </a>
+    <a href="#contact-us-form" class="footer-btn contact-us" style="color:#fff;" data-bs-toggle="modal"
+      data-bs-target="#exampleModal30">
+      Contact Us
+    </a>
+    <a href="tel:+917044086270" class="footer-btn phone">
+      <img src="assets/img/phone.png" alt="" width="25px">
+    </a>
+  </div>
+  <!-- phon sticky -->
 
 
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <!--<div class="modal-header">-->
-        <!--  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>-->
-
-        <!--</div>-->
         <div class="modal-body">
-          <div class="form">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <form>
-              <h4 id="enq">Enquire Now</h4>
-              <div class="mb-4">
-                <input type="text" class="form-control" placeholder="Student's Name">
-              </div>
-              <div class="mb-4">
-                <input type="text" class="form-control" placeholder="Parent's Name">
-              </div>
-              <div class="mb-4">
-                <input type="text" class="form-control" placeholder="Phone Number">
-              </div>
-              <div class="mb-4">
-                <input type="email" class="form-control" placeholder="Email">
-              </div>
+          <div class="row">
+            <div class="col-12 col-xl-6 d-none d-xl-block">
+              <img src="assets/img/form-img.webp" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="form">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form action="">
+                  <div class="form-box">
+                    Application Form
+                  </div>
+                  <h5 class="text-center" style="color: #fff;">
+                    Admission Open 2025-26
 
+                  </h5>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                  </div>
+                  <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Phone Number" required>
+                  </div>
+                  <div class="mb-4">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="mb-4">
+                    <select class="form-select form-select-sm" aria-label="Small select example" required>
+                      <option selected value="">Location</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <select class="form-select form-select-sm" aria-label="Small select example" required>
+                      <option selected value="">Qualification</option>
+                      <option value="H.S">H.S</option>
+                      <option value="Pursuing Graduation">Pursuing Graduation</option>
+                    </select>
+                  </div>
 
-              <div class="mb-4">
-                <select class="form-select form-select-sm" aria-label="Small select example">
-                  <option selected value="">Standard Sought For</option>
-                  <option value="E-KIDZ-N">Nursery</option>
-                  <option value="E-KIDZ-PP1">PP1</option>
-                  <option value="E-KIDZ-PP2">PP2</option>
-                  <option value="E-CHAMPS-1">Grade - 1 </option>
-                  <option value="E-CHAMPS-2">Grade - 2</option>
-                  <option value="E-CHAMPS-3">Grade - 3 </option>
-                  <option value="E-CHAMPS-4">Grade - 4 </option>
-                  <option value="E-CHAMPS-5">Grade - 5 </option>
-                  <option value="VI">Grade - 6 </option>
-                  <option value="VII">Grade - 7 </option>
-                </select>
+                  <div class="mb-4">
+                    <div class="text-center">
+                      <button class="btn btn-primary" style="background-color: #be2925;">Apply Now <img
+                          src="assets/img/arrow.png" alt=""></button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  
+
 
 
 
