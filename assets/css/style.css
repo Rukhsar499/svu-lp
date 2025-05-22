@@ -107,7 +107,7 @@ ul li{
   border-radius: 20px;
 }
 .adn-text{
-  padding-top: 50px;
+  padding-top: 25px;
 }
 ul {
     padding-left: 1rem;
@@ -122,8 +122,22 @@ ul {
   font-size: 42px;
   line-height: 60px;
  }
- 
-
+.admi-img {
+    margin-top: -80px;
+  }
+.admi-img img{
+transform: rotate(-10deg);
+}
+ .accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000000b2;
+     font-family: "Outfit", Sans-serif !important;
+     margin-bottom: 30px;
+}
+.accordion-button {
+    background-color: transparent !important;
+}
 .carrer-text {
     background: rgb(30, 39, 79);
     background: linear-gradient(6deg, rgba(30, 39, 79, 1) 21%, rgba(54, 76, 176, 1) 77%);
@@ -363,6 +377,9 @@ h4{
 .career{
   margin-top: -160px;
   margin-bottom: 80px;
+ }
+ .admist{
+  margin-top: 70px;
  }
 .modal-body{
     padding:0px;
