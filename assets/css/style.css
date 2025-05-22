@@ -37,7 +37,13 @@ p {
 .banner {
   padding-top: 50px;
 }
-
+.tgd img{
+  width: 10% !important;
+  margin: auto;
+}
+.hgf img{
+ width: 100% !important; 
+}
 a {
   text-decoration: none;
 }
@@ -62,6 +68,7 @@ select option {
   padding: 40px;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .pro-img {
